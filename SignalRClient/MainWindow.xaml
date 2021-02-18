@@ -1,0 +1,30 @@
+﻿<Window x:Class="SignalRClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SignalRClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Button Name="cmdSend" Content="Senden" HorizontalAlignment="Left" Height="34" Margin="10,143,0,0" VerticalAlignment="Top" Width="216" Click="cmdSend_Click"/>
+        <ListView Name="lstMessages" Margin="474,44,0,10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Nachrichten" HorizontalAlignment="Left" Margin="574,10,0,0" VerticalAlignment="Top" Width="155"/>
+        <ListView x:Name="lstStates" Margin="18,269,456,10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Status" HorizontalAlignment="Left" Margin="18,234,0,0" VerticalAlignment="Top" Width="155"/>
+        <TextBox Name="txtInput" HorizontalAlignment="Left" Margin="10,10,0,0" Text="Message goes here" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" Height="128"/>
+    </Grid>
+</Window>
